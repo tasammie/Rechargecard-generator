@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRTIME GENERATOR</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <!-- <h2 style="color: rgb(231, 13, 39)">AIRTIME GENERATOR</h2> -->
+     <h2 style="display: flex; justify-content: center; margin: 50px">
+        AIRTIME CODE GENERATOR
+      </h2>
+  
+      <div id="container">
+        SELECT NETWORK :
+        <select name="" id="networkVal">
+          <option value=""></option>
+          <option value="MTN">MTN</option>
+          <option value="GLO">GLO</option>
+          <option value="AIRTEL">AIRTEL</option>
+          <option value="MOBILE">9MOBILE</option>
+        </select>
+  
+        AMOUNT:
+        <select name="" id="amountVal">
+          <option value=""></option>
+          <option value="1000">1000</option>
+          <option value="500">500</option>
+          <option value="200">200</option>
+          <option value="100">100</option>
+          <option value="50">50</option>
+        </select>
+        PIN:
+        <button onclick="handleClick()">Generate</button>
+        <input type="number" name="" id="pinVal" />
+        <button onclick="SaveBtn()">Save Pin</button>
+  
+        <input type="text" name="" id="enterPin" />
+        <p id="errorCode"></p>
+  
+        <button onclick="rechargeButton ()">Enter Pin</button>
+      </div>
+  
+      <div class="box">
+        <span>S/N</span>
+        <span>NETWORK OPERATOR</span>
+        <span>AMOUNT</span>
+        <span>PIN</span>
+        <span>CODE</span>
+        <span>STATUS</span>
+        <span>DATE CREATED</span>
+        <span>DATE USED</span>
+      </div>
+      <div id="displayTableCont"></div>
+  
+      <!-- <div id="display"></div> -->
+    
+</body>
+<script src="./app.js"></script>
+</html>
